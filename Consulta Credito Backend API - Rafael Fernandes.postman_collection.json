@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "928f2d6a-7f28-4804-b0e2-1176bde5c387",
+		"name": "Consulta Credito - Rafael Fernandes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4794688"
+	},
+	"item": [
+		{
+			"name": "consulta numeroNfse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/creditos/:numeroNfse",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"creditos",
+						":numeroNfse"
+					],
+					"variable": [
+						{
+							"key": "numeroNfse",
+							"value": "7891011"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consulta numeroCredito",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/creditos/credito/:numeroCredito",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"creditos",
+						"credito",
+						":numeroCredito"
+					],
+					"variable": [
+						{
+							"key": "numeroCredito",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
