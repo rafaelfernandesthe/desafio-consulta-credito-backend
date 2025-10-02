@@ -29,7 +29,7 @@ public class CreditoService {
         creditoKafkaProducer.enviarEventoConsultaNumeroCredito(numeroCredito);
         Optional<Credito> result = creditoRepository.findByNumeroCredito(numeroCredito);
         if(result.isEmpty()) {
-            throw new NotFoundBusinessException("numeroCredito nao encontrado::" + numeroCredito);
+            throw new NotFoundBusinessException("Nenhum crédito encontrado para o Número do Crédito: " + numeroCredito);
         }
         return result.orElse(null);
     }
