@@ -9,7 +9,7 @@
    ```bash
    docker-compose up -d
    ```
-   > Obs.: O banco de dados já vai estar correto pois o arquivo `init.sql` é carregado no start do container mysql para criar tabelas e popular com alguns registros. 
+   > Obs.: O banco de dados já vai estar correto pois o arquivo `init.sql` é carregado no start do container postgres para criar tabelas e popular com alguns registros. 
 
 2. Start da aplicação java
    ```bash
